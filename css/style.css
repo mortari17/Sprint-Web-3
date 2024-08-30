@@ -1,0 +1,38 @@
+:root {
+    --background-color: rgb(15, 15, 15);
+    --color-white: rgb(255, 255, 255);
+    --color-pink: rgb(253, 57, 81);
+    --color-black-gray: rgb(25, 25, 25);
+    --color-light-gray: rgb(172, 172, 172);
+    --color-gray: rgb(41, 41, 41);
+    --transition: 0.2s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+    color: var(--color-white);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 11vh;
+}
+
+h2 {
+    font-size: 3vh;
+}
+
+p {
+    font-size: 4vh;
+}
