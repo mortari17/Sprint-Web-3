@@ -126,7 +126,6 @@ p {
     align-items: center;
     gap: 5vh;
     padding: 5vh;
-    height: 115vh;
 }
 
 .section h2 {
@@ -143,6 +142,17 @@ p {
 iframe {
     width: 20px;
     height: 20px;
+}
+
+.accordion {
+    width: 100%;
+}
+
+.accordion-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 footer {
