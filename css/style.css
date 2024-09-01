@@ -17,10 +17,12 @@
 }
 
 html {
+    /* font-size: 62.5%; */
     scroll-behavior: smooth;
 }
 
 body {
+    font-size: 1rem;
     background-color: var(--background-color);
 }
 
@@ -33,9 +35,9 @@ h2 {
     font-size: 3vh;
 }
 
-p {
+/* p {
     font-size: 4vh;
-}
+} */
 
 .nav-link {
     color: var(--color-white);
@@ -52,6 +54,7 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 45vh;
 }
 
 .main-title img {
@@ -85,9 +88,9 @@ p {
     line-height: 2.7vw;
 }
 
-#robot p {
+/* #robot p {
     font-size: 2.8vh;
-}
+} */
 
 .text {
     width: 50%;
@@ -107,7 +110,7 @@ p {
     flex-direction: column;
     gap: 2vw;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .content-images img {
@@ -126,6 +129,10 @@ p {
     align-items: center;
     gap: 5vh;
     padding: 5vh;
+}
+
+.card-body{
+    min-height: 12vh;
 }
 
 .section h2 {
@@ -165,4 +172,74 @@ footer {
 
 footer p {
     font-size: 2vh;
+}
+
+@media  (769px < width < 1024px) {
+    html{
+        font-size: 0.8rem;
+    }
+
+    .main-title{
+        height: 60vh;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+    .card-body{
+        min-height: 15vh;
+    }
+
+    .text {
+        width: 100%;
+    }
+}
+
+@media  (481px < width < 768px) {
+    html{
+        font-size: 0.9rem;
+    }
+
+    .main-title{
+        height: 70vh;
+    }
+
+    .card-body{
+        min-height: 12vh;
+    }
+
+    h5{
+        font-size: 0.8rem;
+    }
+}
+
+@media  (width < 480px) {
+    .navbar{
+        width: 100%;
+    }
+
+    html{
+        font-size: 0.6rem;
+    }
+
+    .main-title{
+        height: 75vh;
+    }
+
+    h5{
+        font-size: 1rem;
+    }
+
+    .card-body{
+        min-height: 10vh;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .text{
+        width: 100%;
+    }
 }
