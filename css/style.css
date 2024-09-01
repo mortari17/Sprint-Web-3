@@ -206,6 +206,10 @@ footer p {
     .card-body{
         min-height: 12vh;
     }
+
+    .accordion-body img{
+        max-height: 40vh;
+    }
 }
 
 @media  (width < 480px) {
@@ -243,5 +247,9 @@ footer p {
 
     .card-body{
         min-height: 10vh;
+    }
+
+    .accordion-body img{
+        max-height: 25vh;
     }
 }
