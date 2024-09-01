@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiapão</title>
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <!-- Favicon -->
     <link rel="shortcut icon" href="./images/logo-icone.png" type="image/x-icon">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
+  <!-- Nav-bar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark-subtle" data-bs-theme="dark">
     <div class="container-fluid">
         <ul class="navbar-nav d-flex flex-row me-auto mb-2 mb-lg-0">
@@ -39,6 +43,7 @@
     </div>
   </nav>
 
+  <!-- Main Title -->
     <div class="main-title">
         <div class="title">
             <h1>FIAPÃO</h1>
@@ -47,14 +52,17 @@
         <div class="h2-text"><h2 class="future">O futuro</h2> <h2>começa aqui</h2></div>
     </div>
 
+    <!-- Seções -->
     <section class="sections">
 
+      <!-- O robô -->
       <div class="section" id="robot">
             <h2>O robô</h2>
             <div class="content">
                 <div class="text">
-                    <p>O nosso robô começou como um projeto do 1°ano de sistemas de informção na Faculdade de Informática e Administração Paulista (FIAP), onde foi constatado que equipes de alunos deveriam construir um robô sobre a base de um carrinho com controle através do módulo Bluetooth (acionado pelo celular), capaz de transportar uma bexiga, munido de uma arma, que era controlada através do ARDUINO (mega). Uma vez pronto, as equipes se enfrentariam numa disputa em que o robô deveria manter sua bexiga intacta, enquanto estourava o balão adversário, a Robocup.</p>
-                    <p>Hoje, com os conhecimentos adquiridos dessa época, podemos trazer ao mundo essa experiência do nosso jeito: com inovação, simplicidade e acessibilidade!</p>
+                    <p>
+                      Nosso robô é um projeto desenvolvido no 1º ano do curso de Sistemas de Informação da Faculdade de Informática e Administração Paulista (FIAP). A proposta é que as equipes de alunos construam um robô baseado em um carrinho controlado por um módulo Bluetooth, acionado via celular, capaz de transportar uma bexiga e equipado com uma arma controlada por um Arduino Mega. O objetivo é que, uma vez prontos, os robôs das equipes se enfrentem na Robocup, uma competição em que cada robô deve proteger sua própria bexiga enquanto tenta estourar a do adversário.</p>
+                      <p>Desenvolvendo o projeto, começamos com o estudo de controle remoto utilizando o módulo Bluetooth, garantindo que o robô se movimente com precisão e rapidez. Em seguida, nos concentramos na construção da arma, assegurando que ela tenha alcance e eficácia para atingir a bexiga adversária. A integração do Arduino Mega foi fundamental para programar as ações do robô, desde o movimento até o acionamento da arma. A fase de testes envolveu ajustes finos para garantir que o robô não apenas funcione conforme o esperado, mas também tenha a robustez necessária para enfrentar os desafios da competição.</p>
                 </div>
                 <div class="content-images">
                     <img src="./images/combate-robocup.jpg" alt="Combate entre robôs na robocup, dentro de uma arena circular, com pessoas em volta assistindo.">
@@ -63,6 +71,7 @@
             </div>
         </div>
     
+        <!-- Imagens -->
         <div id="images" class="section">
             <h2>Imagens</h2>
             <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
@@ -94,6 +103,7 @@
             </div>
         </div>
     
+        <!-- Armas -->
         <div id="weapons" class="section">
             <h2>Armas</h2>
             <div class="accordion bg-dark-subtle" data-bs-theme="dark" id="accordionExample">
@@ -105,7 +115,7 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <p>A arma do nosso robô será composta por uma haste de metal ligada, em uma das extremidades, à uma bola de isopor cheia de agulhas, e, na outra extremidade, a um servo motor, em cima do robÔ. Com esse último, a arma será capaz de realizar um movimento de 180°, quando ativada pelos sensores, a fim de estourar a bexiga do robô adversário. Ficará ativa por 15 segundos, e depois voltará para sua forma original até que seja ativada novamente. </p>
+                      <p>A arma do nosso robô consistirá em uma haste de metal conectada, em uma extremidade, a uma bola de isopor repleta de agulhas, e na outra, a um servo motor montado no topo do robô. Esse motor permitirá que a arma execute um movimento de 180°, acionado pelos sensores, com o objetivo de estourar a bexiga do robô adversário. A arma ficará ativa por 15 segundos antes de retornar à sua posição original, aguardando a próxima ativação. </p>
                     </div>
                   </div>
                 </div>
@@ -160,14 +170,14 @@
             </div>
         </div>
 
-        
+        <!-- Hardware -->
         <div id="hardware" class="section">
             <h2>Hardware</h2>
             <div class="container text-center">
                 <div class="row row-cols-4">
                     <div class="col">
                         <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                            <img src="./images/arduino.jpg" class="card-img-top" alt="...">
+                            <img src="./images/arduino.jpg" class="card-img-top" alt="Placa de Arduino Mega que faz parte das peças de hardware do Fiapão">
                             <div class="card-body">
                               <h5 class="card-title">Arduino Mega 2560</h5>
                             </div>
@@ -175,7 +185,7 @@
                     </div>
                     <div class="col">
                         <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                            <img src="./images/bluetooth.png" class="card-img-top" alt="...">
+                            <img src="./images/bluetooth.png" class="card-img-top" alt="Bluetooth HC05 que faz parte das peças de hardware do Fiapão">
                             <div class="card-body">
                               <h5 class="card-title">Bluetooth HC05</h5>
                             </div>
@@ -183,7 +193,7 @@
                     </div>
                     <div class="col">
                         <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                            <img src="./images/protoboard.jpg" class="card-img-top" alt="...">
+                            <img src="./images/protoboard.jpg" class="card-img-top" alt="Mini Protoboard que faz parte das peças de hardware do Fiapão">
                             <div class="card-body">
                               <h5 class="card-title">MIni Protoboard</h5>
                             </div>
@@ -191,7 +201,7 @@
                     </div>
                     <div class="col">
                         <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                            <img src="./images/chave-fim-cursor.webp" class="card-img-top" alt="...">
+                            <img src="./images/chave-fim-cursor.webp" class="card-img-top" alt="Chave Fim de Curso que faz parte das peças de hardware do Fiapão">
                             <div class="card-body">
                               <h5 class="card-title">Chave Fim de Curso</h5>
                             </div>
@@ -199,7 +209,7 @@
                     </div>
                     <div class="col">
                         <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                            <img src="./images/motor-dc.webp" class="card-img-top" alt="...">
+                            <img src="./images/motor-dc.webp" class="card-img-top" alt="Motor DC que faz parte das peças de hardware do Fiapão">
                             <div class="card-body">
                               <h5 class="card-title">Motor DC 3-6v</h5>
                             </div>
@@ -207,7 +217,7 @@
                     </div>
                     <div class="col">
                         <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                            <img src="./images/roda.webp" class="card-img-top" alt="...">
+                            <img src="./images/roda.webp" class="card-img-top" alt="Roda do motor DC que faz parte das peças de hardware do Fiapão">
                             <div class="card-body">
                               <h5 class="card-title">Roda Motor DC</h5>
                             </div>
@@ -215,7 +225,7 @@
                     </div>
                     <div class="col">
                         <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                            <img src="./images/ponte-h.webp" class="card-img-top" alt="...">
+                            <img src="./images/ponte-h.webp" class="card-img-top" alt="Ponte H L298N que faz parte das peças de hardware do Fiapão">
                             <div class="card-body">
                               <h5 class="card-title">Ponte H L298N</h5>
                             </div>
@@ -223,7 +233,7 @@
                     </div>
                     <div class="col">
                         <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                            <img src="./images/fita-led.webp" class="card-img-top" alt="...">
+                            <img src="./images/fita-led.webp" class="card-img-top" alt="Fita Led que faz parte das peças de hardware do Fiapão">
                             <div class="card-body">
                               <h5 class="card-title">Fita Led</h5>
                             </div>
@@ -231,7 +241,7 @@
                     </div>
                     <div class="col">
                         <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                            <img src="./images/pilhas.webp" class="card-img-top" alt="...">
+                            <img src="./images/pilhas.webp" class="card-img-top" alt="Pilhas que fazem parte das peças de hardware do Fiapão">
                             <div class="card-body">
                               <h5 class="card-title">Pilhas</h5>
                             </div>
@@ -239,7 +249,7 @@
                     </div>
                     <div class="col">
                         <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                            <img src="./images/roda-boba.webp" class="card-img-top" alt="...">
+                            <img src="./images/roda-boba.webp" class="card-img-top" alt="Roda Boba que faz parte das peças de hardware do Fiapão">
                             <div class="card-body">
                               <h5 class="card-title">Roda Boba</h5>
                             </div>
@@ -247,7 +257,7 @@
                     </div>
                     <div class="col">
                         <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                            <img src="./images/soquete-pilha.webp" class="card-img-top" alt="...">
+                            <img src="./images/soquete-pilha.webp" class="card-img-top" alt="Soquete para 6 pilhas que faz parte das peças de hardware do Fiapão">
                             <div class="card-body">
                               <h5 class="card-title">Soquete para 6 Pilhas</h5>
                             </div>
@@ -255,9 +265,9 @@
                     </div>
                     <div class="col">
                         <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                            <img src="./images/switch.webp" class="card-img-top" alt="...">
+                            <img src="./images/switch.webp" class="card-img-top" alt="Switch Liga/Desliga 4 portas que faz parte das peças de hardware do Fiapão">
                             <div class="card-body">
-                              <h5 class="card-title">Switch Liga/Desliga 4</h5>
+                              <h5 class="card-title">Switch Liga/Desliga 4 portas</h5>
                             </div>
                         </div>
                     </div>
@@ -265,6 +275,7 @@
               </div>
         </div>
     
+        <!-- Vídeos -->
         <div id="videos" class="section">
             <h2>Vídeos</h2>
             <div class="ratio ratio-4x3">
@@ -276,8 +287,9 @@
         </div>        
     </section>
 
-    <footer>
-        <p>Feito com muito carinho pelos Fiapinhos!</p>
+    <!-- Footer -->
+    <footer class="footer bg-dark-subtle" data-bs-theme="dark">
+      <p>Feito com muito carinho pelos Fiapinhos!</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
