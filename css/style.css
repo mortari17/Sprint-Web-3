@@ -28,11 +28,11 @@ body {
 
 h1 {
     font-weight: 300;
-    font-size: 11vh;
+    font-size: 6rem;
 }
 
 h2 {
-    font-size: 3vh;
+    font-size: 2rem;
 }
 
 /* p {
@@ -198,7 +198,7 @@ footer p {
 
 @media  (481px < width < 768px) {
     html{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .main-title{
@@ -207,6 +207,14 @@ footer p {
 
     .card-body{
         min-height: 12vh;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
     }
 
     h5{
@@ -241,5 +249,13 @@ footer p {
 
     .text{
         width: 100%;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    h2{
+        font-size: 1.2rem;
     }
 }
