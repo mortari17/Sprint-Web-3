@@ -47,7 +47,7 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 45vh;
+    height: 30vh;
 }
 
 .main-title img {
@@ -140,6 +140,25 @@ h2 {
     flex-direction: column;
 }
 
+.accordion-body {
+    display: flex;
+    gap: 1rem;
+}
+
+.accordion-images {
+    width: 20vw;
+    height: 20vw;
+}
+
+.weapon-drawing {
+    width: 50vw;
+    height: 35vw;
+}
+
+.card-body{
+    min-height: 15.1vh;
+}
+
 footer {
     height: 12vh;
     display: flex;
@@ -169,14 +188,18 @@ footer p {
         width: 100%;
     }
 
+    .card-title {
+        font-size: 1.2rem;
+    }
+
     .card-body{
-        min-height: 15vh;
+        min-height: 14vh;
     }
 }
 
 @media  (481px < width < 768px) {
     html{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     h1 {
@@ -201,14 +224,19 @@ footer p {
 
     .text{
         width: 100%;
+        font-size: 0.9rem;
     }
 
     .card-body{
-        min-height: 12vh;
+        min-height: 14vh;
     }
 
     .accordion-body img{
         max-height: 40vh;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
     }
 }
 
@@ -243,10 +271,6 @@ footer p {
 
     .text{
         width: 100%;
-    }
-
-    .card-body{
-        min-height: 10vh;
     }
 
     .accordion-body img{

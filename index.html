@@ -33,30 +33,42 @@
   </head>
   <body>
     <!-- Nav-bar -->
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary bg-dark-subtle"
-      data-bs-theme="dark"
-    >
+    <nav class="navbar navbar-expand-lg bg-dark-subtle" data-bs-theme="dark">
       <div class="container-fluid">
-        <ul class="navbar-nav d-flex flex-row me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link navbar-brand" href="#robot">O robô</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-brand" href="#images">Imagens</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-brand" href="#weapons">Armas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-brand" href="#hardware">Hardware</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-brand" href="#videos">Vídeos</a>
-          </li>
-        </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Alternar navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#robot">O robô</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#images">Imagens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#weapons">Armas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hardware">Hardware</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#videos">Vídeos</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
+    
 
     <!-- Main Title -->
     <div class="main-title">
@@ -81,27 +93,19 @@
         <div class="content">
           <div class="text">
             <p>
-              Nosso robô é um projeto desenvolvido no 1º ano do curso de
-              Sistemas de Informação da Faculdade de Informática e Administração
-              Paulista (FIAP). A proposta é que as equipes de alunos construam
-              um robô baseado em um carrinho controlado por um módulo Bluetooth,
-              acionado via celular, capaz de transportar uma bexiga e equipado
-              com uma arma controlada por um Arduino Mega. O objetivo é que, uma
-              vez prontos, os robôs das equipes se enfrentem na Robocup, uma
-              competição em que cada robô deve proteger sua própria bexiga
-              enquanto tenta estourar a do adversário.
+              Nosso robô é um projeto do 1º ano de Sistemas de Informação da
+              FIAP. O desafio é construir um robô controlado por Bluetooth, via
+              celular, capaz de transportar uma bexiga e equipado com uma arma
+              acionada por Arduino Mega. Na Robocup, cada robô deve proteger sua
+              bexiga enquanto tenta estourar a do adversário.
             </p>
             <p>
-              Desenvolvendo o projeto, começamos com o estudo de controle remoto
-              utilizando o módulo Bluetooth, garantindo que o robô se movimente
-              com precisão e rapidez. Em seguida, nos concentramos na construção
-              da arma, assegurando que ela tenha alcance e eficácia para atingir
-              a bexiga adversária. A integração do Arduino Mega foi fundamental
-              para programar as ações do robô, desde o movimento até o
-              acionamento da arma. A fase de testes envolveu ajustes finos para
-              garantir que o robô não apenas funcione conforme o esperado, mas
-              também tenha a robustez necessária para enfrentar os desafios da
-              competição.
+              O projeto começou com o controle remoto via Bluetooth, garantindo
+              precisão nos movimentos. Em seguida, construímos a arma, focando
+              em alcance e eficácia. O Arduino Mega foi crucial para programar
+              tanto os movimentos quanto o disparo da arma. Nos testes, fizemos
+              ajustes para garantir que o robô funcione bem e seja robusto para
+              a competição.
             </p>
           </div>
           <div class="content-images">
@@ -254,7 +258,7 @@
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                Haste de Metal
+                Materiais
               </button>
             </h2>
             <div
@@ -266,6 +270,22 @@
                 <img
                   src="./images/haste-metal.webp"
                   alt="Haste de metal que serve como um dos componentes da arma do robô."
+                  class="accordion-images"
+                />
+                <img
+                  src="./images/bola-isopor.webp"
+                  alt="Bola de isopor que serve como um dos componentes da arma do robô."
+                  class="accordion-images"
+                />
+                <img
+                  src="./images/agulha.webp"
+                  alt="Agulha que serve como um dos componentes da arma do robô."
+                  class="accordion-images"
+                />
+                <img
+                  src="./images/servo.webp"
+                  alt="Servo Motor que serve como um dos componentes da arma do robô."
+                  class="accordion-images"
                 />
               </div>
             </div>
@@ -280,7 +300,7 @@
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                Bola de Ispor
+                Desenho
               </button>
             </h2>
             <div
@@ -290,60 +310,9 @@
             >
               <div class="accordion-body">
                 <img
-                  src="./images/bola-isopor.webp"
-                  alt="Bola de isopor que serve como um dos componentes da arma do robô."
-                />
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
-              >
-                Agulha
-              </button>
-            </h2>
-            <div
-              id="collapseFour"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <img
-                  src="./images/agulha.webp"
-                  alt="Agulha que serve como um dos componentes da arma do robô."
-                />
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFive"
-                aria-expanded="false"
-                aria-controls="collapseFive"
-              >
-                Servo Motor
-              </button>
-            </h2>
-            <div
-              id="collapseFive"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <img
-                  src="./images/servo.webp"
-                  alt="Servo Motor que serve como um dos componentes da arma do robô."
+                  src="./images/desenho-arma.png"
+                  alt="Desenhos da arma do robô Fiapão."
+                  class="weapon-drawing"
                 />
               </div>
             </div>
@@ -355,7 +324,7 @@
       <div id="hardware" class="section">
         <h2>Hardware</h2>
         <div class="container text-center">
-          <div class="row row-cols-4">
+          <div class="row row-cols-2 row-cols-md-4">
             <div class="col">
               <div class="card text-bg-dark mb-3" style="max-width: 18rem">
                 <img
@@ -505,28 +474,39 @@
       </div>
 
       <!-- Vídeos -->
-      <div id="videos" class="section">
-        <h2>Vídeos</h2>
-        <div class="ratio ratio-4x3">
-          <iframe
-            src="https://www.youtube.com/embed/QP8Nsz60ZAU"
-            title="ROBÔ FIAPÃO EM MOVIMENTO"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="ratio ratio-4x3">
-          <iframe
-            src="https://www.youtube.com/embed/RXuJJZ3ukog"
-            title="MAKING OF MONTAGEM ROBÔ FIAPÃO"
-            allowfullscreen
-          ></iframe>
+    <div id="videos" class="section">
+      <h2>Vídeos</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="ratio ratio-4x3">
+              <iframe
+                src="https://www.youtube.com/embed/QP8Nsz60ZAU"
+                title="ROBÔ FIAPÃO EM MOVIMENTO"
+                allowfullscreen
+              ></iframe>
+              </div>
+              </div>
+              <div class="col-md-6 mb-3">
+              <div class="ratio ratio-4x3">
+              <iframe
+                src="https://www.youtube.com/embed/RXuJJZ3ukog"
+                title="MAKING OF MONTAGEM ROBÔ FIAPÃO"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+
 
     <!-- Footer -->
     <footer class="footer bg-dark-subtle" data-bs-theme="dark">
-      <p>Feito com muito carinho pelos Fiapinhos!</p>
+      <p>
+        Desenvolvido com dedicação pelos alunos da FIAP | Projeto Robocup -
+        1SIA-2024.
+      </p>
     </footer>
 
     <script
