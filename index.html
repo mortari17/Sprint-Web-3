@@ -28,6 +28,12 @@
       type="image/x-icon"
     />
 
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/fcb9c16b20.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -54,6 +60,12 @@
               <a class="nav-link" href="#robot">O robô</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#robocup">Robocup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#next">Next</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#images">Imagens</a>
             </li>
             <li class="nav-item">
@@ -64,6 +76,12 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#videos">Vídeos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#meet-us">Conheça os Fiapinhos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#call-us">Entre em contato</a>
             </li>
           </ul>
         </div>
@@ -94,26 +112,13 @@
         <div class="content">
           <div class="text">
             <p>
-              Nosso robô é um projeto do 1º ano de Sistemas de Informação da
-              FIAP. O desafio é construir um robô controlado por Bluetooth, via
-              celular, capaz de transportar uma bexiga e equipado com uma arma
-              acionada por Arduino Mega. Na Robocup, cada robô deve proteger sua
-              bexiga enquanto tenta estourar a do adversário.
+              O robô "fiapão" foi desenvolvido pelos alunos do 1º ano de Sistemas de Informação da FIAP, como parte do desafio de criar um robô competitivo para a Robocup. O robô é controlado via Bluetooth por um celular e é equipado com uma bexiga e uma arma acionada por um Arduino Mega.
             </p>
             <p>
-              O projeto começou com o controle remoto via Bluetooth, garantindo
-              precisão nos movimentos. Em seguida, construímos a arma, focando
-              em alcance e eficácia. O Arduino Mega foi crucial para programar
-              tanto os movimentos quanto o disparo da arma. Nos testes, fizemos
-              ajustes para garantir que o robô funcione bem e seja robusto para
-              a competição.
+              O desenvolvimento começou pelo controle remoto dos movimentos, visando precisão e responsividade. Posteriormente, o foco foi na construção da arma, projetada para ser eficiente no combate. Testes e ajustes constantes foram essenciais para otimizar o desempenho do robô e garantir sua robustez durante a competição.
             </p>
           </div>
           <div class="content-images">
-            <img
-              src="./images/combate-robocup.jpg"
-              alt="Combate entre robôs na robocup, dentro de uma arena circular, com pessoas em volta assistindo."
-            />
             <img
               src="./images/robocup.jpg"
               alt="Combate entre robôs na robocup, entre um com uma bexiga branca e outro com uma preta."
@@ -121,6 +126,46 @@
           </div>
         </div>
       </div>
+
+      <div class="section" id="robocup">
+        <h2>Robocup</h2>
+        <div class="content">
+          <div class="text">
+            <p>
+              A Robocup, organizada pela FIAP, é uma competição onde robôs devem proteger sua bexiga e estourar a do adversário. O evento desafia os alunos a programar robôs usando tecnologias como Bluetooth e Arduino Mega, controlando movimentos e armas de forma precisa. 
+            </p>
+            <p>
+              Nosso robô, o "fiapão", foi desenvolvido para competir com agilidade e eficácia. Programamos o controle de movimentos para garantir precisão, e ajustamos a arma para atingir o oponente com sucesso. A Robocup nos permite testar habilidades técnicas e de trabalho em equipe.
+            </p>
+          </div>
+          <div class="content-images">
+            <img
+              src="./images/combate-robocup.jpg"
+              alt="Combate entre robôs na robocup, dentro de uma arena circular, com pessoas em volta assistindo."
+            />
+          </div>
+        </div>
+      </div>
+      
+      <div class="section" id="next">
+        <h2>Next</h2>
+        <div class="content">
+          <div class="text">
+            <p>
+              O Next é um evento de tecnologia e inovação da FIAP, onde os alunos apresentam projetos criativos e práticos. A competição reúne ideias em áreas como automação, sustentabilidade e inteligência artificial, incentivando soluções reais para problemas do cotidiano.
+            </p>
+            <p>
+              No Next, os estudantes integram tecnologia e negócios, desenvolvendo projetos inovadores e viáveis. O evento oferece uma rica troca de ideias, além de contato direto com profissionais da indústria, preparando os alunos para o mercado.
+            </p>
+          </div>
+          <div class="content-images">
+            <img
+              src="./images/next.jpg"
+              alt="Apresentação de projeto no evento Next da FIAP."
+            />
+          </div>
+        </div>
+      </div>      
 
       <!-- Imagens -->
       <div id="images" class="section">
@@ -253,26 +298,26 @@
               class="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div class="accordion-body d-flex align-items-center justify-content-center">
                 <img
                   src="./images/haste-metal.webp"
                   alt="Haste de metal que serve como um dos componentes da arma do robô."
-                  class="accordion-images"
+                  class="accordion-images img-fluid"
                 />
                 <img
                   src="./images/bola-isopor.webp"
                   alt="Bola de isopor que serve como um dos componentes da arma do robô."
-                  class="accordion-images"
+                  class="accordion-images img-fluid"
                 />
                 <img
                   src="./images/agulha.webp"
                   alt="Agulha que serve como um dos componentes da arma do robô."
-                  class="accordion-images"
+                  class="accordion-images img-fluid"
                 />
                 <img
                   src="./images/servo.webp"
                   alt="Servo Motor que serve como um dos componentes da arma do robô."
-                  class="accordion-images"
+                  class="accordion-images img-fluid"
                 />
               </div>
             </div>
@@ -299,7 +344,7 @@
                 <img
                   src="./images/desenho-arma.png"
                   alt="Desenhos da arma do robô Fiapão."
-                  class="weapon-drawing"
+                  class="weapon-drawing img-fluid"
                 />
               </div>
             </div>
@@ -487,14 +532,125 @@
       </div>
     </div>
 
+    <div class="section" id="meet-us">
+      <h2>Conheça os Fiapinhos</h2>
+      <div class="meet-us-row">
+        <div class="person">
+          <img
+            src="./images/erick.jpg"
+            alt="Homem sorrindo com um moletom bege."
+          />
+          <div class="information">
+            <p>Erick Kenzo Uehara Uehara</p>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <p class="position">Engenheiro de hardware</p>
+        </div>
+        <div class="person">
+          <img
+            src="./images/felipe.jpeg"
+            alt="Homem sorrindo com uma camiseta branca."
+          />
+          <div class="information">
+            <p>Felipe Dyundi Takara</p>
+            <a
+              href="https://www.linkedin.com/in/felipe-takara-5125b230a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <p class="position">Engenheiro de hardware</p>
+        </div>
+        <div class="person">
+          <img
+            src="./images/joao.jpeg"
+            alt="Homem branco sorrindo com camiseta cinza."
+          />
+          <div class="information">
+            <p>João Vitor Pedreira de Castro</p>
+            <a
+              href="https://www.linkedin.com/in/jo%C3%A3o-castro-512ab52b5/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <p class="position">Engenheiro de software</p>
+        </div>
+      </div>
+      <div class="meet-us-row">
+        <div class="person">
+          <img
+            src="./images/leonardo.jpeg"
+            alt="Homem branco sorrindo com camiseta azul e boné."
+          />
+          <div class="information">
+            <p>Leonardo Mortari</p>
+            <a
+              href="https://www.linkedin.com/in/leonardo-mortari-901b992a7/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <p class="position">Engenheiro de software</p>
+        </div>
+        <div class="person">
+          <img
+            src="./images/vinicius.jpeg"
+            alt="Homem branco sorrindo de camiseta marrom e boné."
+          />
+          <div class="information">
+            <p>Vinicius Fagundes da Silva</p>
+            <a
+              href="https://www.linkedin.com/in/vinicius-fagundes-b977a930a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <p class="position">Chefe de Marketing</p>
+        </div>
+      </div>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer bg-dark-subtle" data-bs-theme="dark">
-      <p>
-        Desenvolvido com dedicação pelos alunos da FIAP | Projeto Robocup -
-        1SIA-2024.
+    <div class="section" id="call-us">
+      <h2>Entre em contato</h2>
+      <p class="text-center">
+        Preencha o formulário abaixo para ficar por dentro das últimas novidades sobre o projeto Robocup e os eventos da FIAP. Entraremos em contato com você sobre atualizações e novas oportunidades!
       </p>
+      <form class="bg-dark text-light p-4 rounded">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nome</label>
+          <input type="text" class="form-control bg-dark text-light" id="name" placeholder="Seu nome">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control bg-dark text-light" id="email" placeholder="seuemail@exemplo.com">
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Celular</label>
+          <input type="tel" class="form-control bg-dark text-light" id="phone" placeholder="(11) 91234-5678">
+        </div>
+        <button type="submit" class="btn btn-light">Enviar</button>
+      </form>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer bg-dark-subtle text-center text-light p-3 d-flex flex-column" data-bs-theme="dark">
+      <p class="m-0">
+        Desenvolvido com dedicação pelos alunos da FIAP | Projeto Robocup - 1SIA-2024.
+      </p>
+      <div class="social-icons mt-3 d-flex justify-content-center align-items-center">
+        <a href="#" class="text-light mx-2">
+          <i class="fab fa-instagram fa-2x social-i"></i>
+        </a>
+        <a href="#" class="text-light mx-2">
+          <i class="fab fa-facebook fa-2x social-i"></i>
+        </a>
+        <a href="#" class="text-light mx-2">
+          <i class="fab fa-x-twitter fa-2x social-i"></i>
+        </a>
+      </div>
     </footer>
+    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
